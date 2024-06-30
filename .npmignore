@@ -1,0 +1,31 @@
+.DS_Store
+
+node_modules
+
+.circleci
+.husky
+
+.editorconfig
+
+.eslintignore
+.eslintrc
+
+.github
+.gitattributes
+.gitignore
+
+# NPM
+.npmignore
+.npmrc
+
+# NVM
+.nvmrc
+
+# Deps
+.depsrc
+
+# Babel
+babel.config.*
+
+# ESLint
+eslint.config.*
