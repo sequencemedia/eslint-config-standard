@@ -4,12 +4,12 @@ import stylistic from './config/stylistic.mjs'
 export default [
   {
     name: '@sequencemedia/eslint-config-standard',
-    languageOptions: {
-      ecmaVersion: 'latest'
-    },
     files: [
       '**/*.{mjs,cjs}'
-    ]
+    ],
+    languageOptions: {
+      ecmaVersion: 'latest'
+    }
   },
   standard,
   stylistic

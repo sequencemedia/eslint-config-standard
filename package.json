@@ -69,6 +69,7 @@
   },
   "exports": {
     ".": "./index.mjs",
-    "./config/*": "./config/*.mjs"
+    "./config/*": "./config/*.mjs",
+    "./merge": "./merge.mjs"
   }
 }
