@@ -54,6 +54,7 @@
     "@typescript-eslint/eslint-plugin": "8.0.0-alpha.34",
     "@typescript-eslint/utils": "8.0.0-alpha.34",
     "eslint-plugin-n": "^17.9.0",
+    "globals": "^15.8.0",
     "typescript-eslint": "8.0.0-alpha.34"
   },
   "devDependencies": {
