@@ -20,36 +20,40 @@ export function getSettings ({ settings = {} }) {
 
 export function mergeLanguageOptions (alpha = {}, omega = {}) {
   return (
-    Object.assign(
-      structuredClone(getLanguageOptions(alpha)),
-      getLanguageOptions(omega)
-    )
+    Object
+      .assign(
+        structuredClone(getLanguageOptions(alpha)),
+        getLanguageOptions(omega)
+      )
   )
 }
 
 export function mergeLinterOptions (alpha = {}, omega = {}) {
   return (
-    Object.assign(
-      structuredClone(getLinterOptions(alpha)),
-      getLinterOptions(omega)
-    )
+    Object
+      .assign(
+        structuredClone(getLinterOptions(alpha)),
+        getLinterOptions(omega)
+      )
   )
 }
 
 export function mergeRules (alpha = {}, omega = {}) {
   return (
-    Object.assign(
-      structuredClone(getRules(alpha)),
-      getRules(omega)
-    )
+    Object
+      .assign(
+        structuredClone(getRules(alpha)),
+        getRules(omega)
+      )
   )
 }
 
 export function mergeSettings (alpha = {}, omega = {}) {
   return (
-    Object.assign(
-      structuredClone(getSettings(alpha)),
-      getSettings(omega)
-    )
+    Object
+      .assign(
+        structuredClone(getSettings(alpha)),
+        getSettings(omega)
+      )
   )
 }
