@@ -5,20 +5,17 @@ import {
 import {
   getLanguageOptions,
   getLinterOptions,
-  getProcessor,
   getRules,
   getSettings,
   mergeLanguageOptions,
   mergeLinterOptions,
-  mergeProcessor,
   mergeRules,
   mergeSettings
-} from '@sequencemedia/eslint-config-standard/merge'
+} from '#eslint-config-standard/common/merge'
 
-describe('@sequencemedia/eslint-config-standard/merge', () => {
+describe('#eslint-config-standard/common/merge', () => {
   const MOCK_LANGUAGE_OPTIONS = {}
   const MOCK_LINTER_OPTIONS = {}
-  const MOCK_PROCESSOR = {}
   const MOCK_RULES = {}
   const MOCK_SETTINGS = {}
 
@@ -28,10 +25,6 @@ describe('@sequencemedia/eslint-config-standard/merge', () => {
 
   describe('`getLinterOptions`', () => {
     it('is a function', () => expect(getLinterOptions).to.be.a('function'))
-  })
-
-  describe('`getProcessor`', () => {
-    it('is a function', () => expect(getProcessor).to.be.a('function'))
   })
 
   describe('`getRules`', () => {
@@ -48,10 +41,6 @@ describe('@sequencemedia/eslint-config-standard/merge', () => {
 
   describe('`mergeLinterOptions`', () => {
     it('is a function', () => expect(mergeLinterOptions).to.be.a('function'))
-  })
-
-  describe('`mergeProcessor`', () => {
-    it('is a function', () => expect(mergeProcessor).to.be.a('function'))
   })
 
   describe('`mergeRules`', () => {
@@ -73,13 +62,6 @@ describe('@sequencemedia/eslint-config-standard/merge', () => {
     it('returns an object', () => (
       expect(getLinterOptions({ linterOptions: MOCK_LINTER_OPTIONS }))
         .to.equal(MOCK_LINTER_OPTIONS)
-    ))
-  })
-
-  describe('`getProcessor()`', () => {
-    it('returns an object', () => (
-      expect(getProcessor({ processor: MOCK_PROCESSOR }))
-        .to.equal(MOCK_PROCESSOR)
     ))
   })
 
@@ -109,48 +91,6 @@ describe('@sequencemedia/eslint-config-standard/merge', () => {
       expect(mergeLinterOptions({ linterOptions: { mockOption: 'alpha' } }, { linterOptions: { mockOption: 'omega' } }))
         .to.eql({ mockOption: 'omega' })
     ))
-  })
-
-  describe('`mergeProcessor()`', () => {
-    describe('an object with `preprocess` and `postprocess` methods', () => {
-      it('returns an object', () => {
-        const ALPHA = {
-          preprocess () { },
-          postprocess () { }
-        }
-
-        const OMEGA = {
-          preprocess () { },
-          postprocess () { }
-        }
-
-        return (
-          expect(mergeProcessor({ processor: ALPHA }, { processor: OMEGA }))
-            .to.eql(OMEGA)
-        )
-      })
-    })
-
-    describe('a string for a plugin', () => {
-      it('returns a string', () => {
-        const ALPHA = {
-          preprocess () { },
-          postprocess () { }
-        }
-
-        const OMEGA = 'mock plugin'
-
-        return (
-          expect(mergeProcessor({ processor: ALPHA }, {
-            plugins: {
-              [OMEGA]: {}
-            },
-            processor: OMEGA
-          }))
-            .to.eql(OMEGA)
-        )
-      })
-    })
   })
 
   describe('`mergeRules()`', () => {

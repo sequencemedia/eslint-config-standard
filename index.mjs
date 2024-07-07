@@ -1,5 +1,5 @@
-import standard from './config/standard.mjs'
-import stylistic from './config/stylistic.mjs'
+import standard from '#eslint-config-standard/config/standard'
+import stylistic from '#eslint-config-standard/config/stylistic'
 
 export default [
   {

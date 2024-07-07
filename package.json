@@ -69,11 +69,18 @@
     "eslint": ">=9"
   },
   "imports": {
+    "#eslint-config-standard/config/*": "./config/*.mjs",
+    "#eslint-config-standard/common/merge/*": "./common/merge/*.mjs",
+    "#eslint-config-standard/common/merge": "./common/merge.mjs",
+    "#eslint-config-standard/common": "./common/index.mjs",
+    "#eslint-config-standard/merge/*": "./merge/*.mjs",
+    "#eslint-config-standard/merge": "./merge.mjs",
     "#eslint-config-standard": "./index.mjs"
   },
   "exports": {
     ".": "./index.mjs",
     "./config/*": "./config/*.mjs",
+    "./merge/*": "./merge/*.mjs",
     "./merge": "./merge.mjs"
   }
 }

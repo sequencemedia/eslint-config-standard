@@ -1,4 +1,4 @@
-import standard from '#eslint-config-standard'
+import stylistic from '#eslint-config-standard/config/stylistic'
 
 import {
   mergeLanguageOptions,
@@ -26,22 +26,13 @@ import {
  *  settings - An object containing name-value pairs of information that should be available to all rules.
  */
 
-function toMergeWith (omega) {
-  return function mergeWith (alpha) {
-    return {
-      ...alpha,
-      ...omega,
-      languageOptions: mergeLanguageOptions(alpha, omega),
-      linterOptions: mergeLinterOptions(alpha, omega),
-      rules: mergeRules(alpha, omega),
-      settings: mergeSettings(alpha, omega)
-    }
+export default function merge (configuration) {
+  return {
+    ...stylistic,
+    ...configuration,
+    languageOptions: mergeLanguageOptions(stylistic, configuration),
+    linterOptions: mergeLinterOptions(stylistic, configuration),
+    rules: mergeRules(stylistic, configuration),
+    settings: mergeSettings(stylistic, configuration)
   }
-}
-
-export default function merge (omega) {
-  return (
-    standard
-      .map(toMergeWith(omega))
-  )
 }
