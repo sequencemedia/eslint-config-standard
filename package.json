@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/eslint-config-standard",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Standard configuration for ESLint 9",
   "main": "./index.mjs",
   "type": "module",
