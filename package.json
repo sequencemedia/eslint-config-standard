@@ -1,29 +1,7 @@
 {
   "name": "@sequencemedia/eslint-config-standard",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Standard configuration for ESLint 9",
-  "main": "./index.mjs",
-  "type": "module",
-  "author": {
-    "name": "Jonathan Perry for Sequence Media Limited",
-    "email": "sequencemedia@sequencemedia.net",
-    "url": "https://sequencemedia.net"
-  },
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/sequencemedia/eslint-config-standard.git"
-  },
-  "homepage": "https://github.com/sequencemedia/eslint-config-standard#readme",
-  "bugs": {
-    "url": "https://github.com/sequencemedia/eslint-config-standard/issues"
-  },
-  "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix",
-    "test": "mocha test --recursive --verbose --color",
-    "prepare": "husky"
-  },
   "keywords": [
     "JavaScript Standard Style",
     "check",
@@ -50,6 +28,28 @@
     "style linter",
     "verify"
   ],
+  "main": "./index.mjs",
+  "type": "module",
+  "author": {
+    "name": "Jonathan Perry for Sequence Media Limited",
+    "email": "sequencemedia@sequencemedia.net",
+    "url": "https://sequencemedia.net"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sequencemedia/eslint-config-standard.git"
+  },
+  "homepage": "https://github.com/sequencemedia/eslint-config-standard#readme",
+  "bugs": {
+    "url": "https://github.com/sequencemedia/eslint-config-standard/issues"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "mocha test --recursive --verbose --color",
+    "prepare": "husky"
+  },
   "dependencies": {
     "@stylistic/eslint-plugin": "2.6.0-beta.0",
     "@typescript-eslint/eslint-plugin": "8.0.0-alpha.34",
