@@ -47,8 +47,8 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "test": "mocha test --recursive --verbose --color",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "mocha test --recursive --verbose --color"
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "2.6.0-beta.0",
@@ -59,7 +59,7 @@
     "typescript-eslint": "8.0.0-alpha.34"
   },
   "devDependencies": {
-    "@sequencemedia/hooks": "^1.0.503",
+    "@sequencemedia/hooks": "^1.0.504",
     "chai": "^5.1.1",
     "eslint": "^9.7.0",
     "husky": "^9.0.11",
@@ -69,18 +69,18 @@
     "eslint": ">=9"
   },
   "imports": {
-    "#eslint-config-standard/config/*": "./config/*.mjs",
-    "#eslint-config-standard/common/merge/*": "./common/merge/*.mjs",
-    "#eslint-config-standard/common/merge": "./common/merge.mjs",
+    "#eslint-config-standard": "./index.mjs",
     "#eslint-config-standard/common": "./common/index.mjs",
-    "#eslint-config-standard/merge/*": "./merge/*.mjs",
+    "#eslint-config-standard/common/merge": "./common/merge.mjs",
+    "#eslint-config-standard/common/merge/*": "./common/merge/*.mjs",
+    "#eslint-config-standard/config/*": "./config/*.mjs",
     "#eslint-config-standard/merge": "./merge.mjs",
-    "#eslint-config-standard": "./index.mjs"
+    "#eslint-config-standard/merge/*": "./merge/*.mjs"
   },
   "exports": {
     ".": "./index.mjs",
     "./config/*": "./config/*.mjs",
-    "./merge/*": "./merge/*.mjs",
-    "./merge": "./merge.mjs"
+    "./merge": "./merge.mjs",
+    "./merge/*": "./merge/*.mjs"
   }
 }
