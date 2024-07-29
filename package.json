@@ -59,7 +59,7 @@
     "typescript-eslint": "8.0.0-alpha.34"
   },
   "devDependencies": {
-    "@sequencemedia/hooks": "^1.0.507",
+    "@sequencemedia/hooks": "^1.0.508",
     "chai": "^5.1.1",
     "eslint": "^9.8.0",
     "husky": "^9.1.3",
