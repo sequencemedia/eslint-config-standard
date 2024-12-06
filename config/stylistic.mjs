@@ -6,6 +6,9 @@ export default {
     '@stylistic': stylistic
   },
   rules: {
+    /**
+     * `@stylistic/eslint-plugin`
+     */
     '@stylistic/array-bracket-spacing': ['error', 'never'],
     '@stylistic/arrow-spacing': ['error', { before: true, after: true }],
     '@stylistic/block-spacing': ['error', 'always'],
