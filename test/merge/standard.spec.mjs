@@ -2,11 +2,11 @@ import {
   expect
 } from 'chai'
 
-import STANDARD from '#eslint-config-standard/config/standard'
+import STANDARD from '@sequencemedia/eslint-config-standard/config/standard'
 
-import merge from '#eslint-config-standard/merge/standard'
+import merge from '@sequencemedia/eslint-config-standard/merge/standard'
 
-describe('#eslint-config-standard/merge/standard', () => {
+describe('@sequencemedia/eslint-config-standard/merge/standard', () => {
   describe('`merge`', () => it('is a function', () => expect(merge).to.be.a('function')))
 
   describe('`merge()`', () => {

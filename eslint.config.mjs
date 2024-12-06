@@ -3,6 +3,9 @@ import merge from './merge.mjs'
 
 export default [
   ...merge({
+    files: [
+      '**/*.{mjs,cjs}'
+    ],
     ignores: [
       'test'
     ],
@@ -14,7 +17,7 @@ export default [
   }),
   ...merge({
     files: [
-      'test/**/*.mjs'
+      'test/**/*.{mjs,cjs}'
     ],
     languageOptions: {
       globals: {

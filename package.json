@@ -51,6 +51,7 @@
     "test": "mocha test --recursive --verbose --color"
   },
   "dependencies": {
+    "@sequencemedia/eslint-merge": "^0.0.0",
     "@stylistic/eslint-plugin": "^2.11.0",
     "eslint-plugin-n": "^17.14.0",
     "globals": "^15.13.0"
@@ -67,14 +68,13 @@
   "imports": {
     "#eslint-config-standard": "./index.mjs",
     "#eslint-config-standard/common": "./common/index.mjs",
-    "#eslint-config-standard/common/merge": "./common/merge.mjs",
-    "#eslint-config-standard/common/merge/*": "./common/merge/*.mjs",
     "#eslint-config-standard/config/*": "./config/*.mjs",
     "#eslint-config-standard/merge": "./merge.mjs",
     "#eslint-config-standard/merge/*": "./merge/*.mjs"
   },
   "exports": {
     ".": "./index.mjs",
+    "./common": "./common/index.mjs",
     "./config/*": "./config/*.mjs",
     "./merge": "./merge.mjs",
     "./merge/*": "./merge/*.mjs"

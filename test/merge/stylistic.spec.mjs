@@ -2,11 +2,11 @@ import {
   expect
 } from 'chai'
 
-import STYLISTIC from '#eslint-config-standard/config/stylistic'
+import STYLISTIC from '@sequencemedia/eslint-config-standard/config/stylistic'
 
-import merge from '#eslint-config-standard/merge/stylistic'
+import merge from '@sequencemedia/eslint-config-standard/merge/stylistic'
 
-describe('#eslint-config-standard/merge/stylistic', () => {
+describe('@sequencemedia/eslint-config-standard/merge/stylistic', () => {
   describe('`merge`', () => it('is a function', () => expect(merge).to.be.a('function')))
 
   describe('`merge()`', () => {
