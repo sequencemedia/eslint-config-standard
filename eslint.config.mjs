@@ -1,8 +1,11 @@
 import globals from 'globals'
-import merge from './merge.mjs'
+import {
+  configs
+} from './index.mjs'
 
 export default [
-  ...merge({
+  {
+    ...configs.recommended,
     files: [
       '**/*.{mjs,cjs}'
     ],
@@ -14,8 +17,9 @@ export default [
         ...globals.node
       }
     }
-  }),
-  ...merge({
+  },
+  {
+    ...configs.recommended,
     files: [
       'test/**/*.{mjs,cjs}'
     ],
@@ -24,5 +28,5 @@ export default [
         ...globals.mocha
       }
     }
-  })
+  }
 ]
