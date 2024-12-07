@@ -70,6 +70,7 @@
   "imports": {
     "#eslint-config-standard": "./index.mjs",
     "#eslint-config-standard/common": "./common/index.mjs",
+    "#eslint-config-standard/config": "./config/index.mjs",
     "#eslint-config-standard/config/*": "./config/*.mjs",
     "#eslint-config-standard/merge": "./merge.mjs",
     "#eslint-config-standard/merge/*": "./merge/*.mjs"
@@ -77,6 +78,7 @@
   "exports": {
     ".": "./index.mjs",
     "./common": "./common/index.mjs",
+    "./config": "./config/index.mjs",
     "./config/*": "./config/*.mjs",
     "./merge": "./merge.mjs",
     "./merge/*": "./merge/*.mjs"

@@ -48,15 +48,9 @@ describe('@sequencemedia/eslint-config-standard/merge', () => {
             .to.eql([
               {
                 name: '@sequencemedia/eslint-config-standard',
-                files: MOCK_FILES,
-                ignores: MOCK_IGNORES,
                 languageOptions: {
-                  ecmaVersion: 'latest',
-                  ...MOCK_LANGUAGE_OPTIONS
-                },
-                linterOptions: MOCK_LINTER_OPTIONS,
-                rules: MOCK_RULES,
-                settings: MOCK_SETTINGS
+                  ecmaVersion: 'latest'
+                }
               },
               {
                 ...STANDARD,
