@@ -2,7 +2,7 @@ import {
   expect
 } from 'chai'
 
-import STANDARD from '@sequencemedia/eslint-config-standard/config/standard'
+import STANDARD from '@sequencemedia/eslint-config-standard/configs/standard'
 
 import merge from '@sequencemedia/eslint-config-standard/merge/standard'
 

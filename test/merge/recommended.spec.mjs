@@ -2,11 +2,11 @@ import {
   expect
 } from 'chai'
 
-import STYLISTIC from '@sequencemedia/eslint-config-standard/configs/stylistic'
+import RECOMMENDED from '@sequencemedia/eslint-config-standard/configs/recommended'
 
-import merge from '@sequencemedia/eslint-config-standard/merge/stylistic'
+import merge from '@sequencemedia/eslint-config-standard/merge/recommended'
 
-describe('@sequencemedia/eslint-config-standard/merge/stylistic', () => {
+describe('@sequencemedia/eslint-config-standard/merge/recommended', () => {
   describe('`merge`', () => it('is a function', () => expect(merge).to.be.a('function')))
 
   describe('`merge()`', () => {
@@ -26,8 +26,9 @@ describe('@sequencemedia/eslint-config-standard/merge/stylistic', () => {
         const MOCK_SETTINGS = { mockOption: 'MOCK SETTINGS' }
 
         const {
-          rules: STYLISTIC_RULES
-        } = STYLISTIC
+          languageOptions: RECOMMENDED_LANGUAGE_OPTIONS,
+          rules: RECOMMENDED_RULES
+        } = RECOMMENDED
 
         return (
           expect(
@@ -41,13 +42,16 @@ describe('@sequencemedia/eslint-config-standard/merge/stylistic', () => {
             })
           )
             .to.eql({
-              ...STYLISTIC,
+              ...RECOMMENDED,
               files: MOCK_FILES,
               ignores: MOCK_IGNORES,
-              languageOptions: MOCK_LANGUAGE_OPTIONS,
+              languageOptions: {
+                ...RECOMMENDED_LANGUAGE_OPTIONS,
+                ...MOCK_LANGUAGE_OPTIONS
+              },
               linterOptions: MOCK_LINTER_OPTIONS,
               rules: {
-                ...STYLISTIC_RULES,
+                ...RECOMMENDED_RULES,
                 ...MOCK_RULES
               },
               settings: MOCK_SETTINGS

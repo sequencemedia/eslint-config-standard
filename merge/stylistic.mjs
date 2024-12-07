@@ -1,6 +1,6 @@
 import merge from '@sequencemedia/eslint-merge'
 
-import CONFIG from '#eslint-config-standard/config/stylistic'
+import CONFIG from '#eslint-config-standard/configs/stylistic'
 
 export default function mergeConfig (config) {
   return (

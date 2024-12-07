@@ -2,8 +2,8 @@ import {
   expect
 } from 'chai'
 
-import STANDARD from '@sequencemedia/eslint-config-standard/config/standard'
-import STYLISTIC from '@sequencemedia/eslint-config-standard/config/stylistic'
+import STANDARD from '@sequencemedia/eslint-config-standard/configs/standard'
+import STYLISTIC from '@sequencemedia/eslint-config-standard/configs/stylistic'
 
 import merge from '@sequencemedia/eslint-config-standard/merge'
 
@@ -21,10 +21,18 @@ describe('@sequencemedia/eslint-config-standard/merge', () => {
         const MOCK_IGNORES = [
           'MOCK IGNORES'
         ]
-        const MOCK_LANGUAGE_OPTIONS = { mockOption: 'MOCK LANGUAGE OPTIONS' }
-        const MOCK_LINTER_OPTIONS = { mockOption: 'MOCK LINTER OPTIONS' }
-        const MOCK_RULES = { mockOption: 'MOCK RULES' }
-        const MOCK_SETTINGS = { mockOption: 'MOCK SETTINGS' }
+        const MOCK_LANGUAGE_OPTIONS = {
+          mockOption: 'MOCK LANGUAGE OPTIONS'
+        }
+        const MOCK_LINTER_OPTIONS = {
+          mockOption: 'MOCK LINTER OPTIONS'
+        }
+        const MOCK_RULES = {
+          mockOption: 'MOCK RULES'
+        }
+        const MOCK_SETTINGS = {
+          mockOption: 'MOCK SETTINGS'
+        }
 
         const {
           rules: STANDARD_RULES
@@ -50,7 +58,10 @@ describe('@sequencemedia/eslint-config-standard/merge', () => {
                 name: '@sequencemedia/eslint-config-standard',
                 languageOptions: {
                   ecmaVersion: 'latest'
-                }
+                },
+                files: [
+                  '**/*.{js,mjs,cjs}'
+                ]
               },
               {
                 ...STANDARD,

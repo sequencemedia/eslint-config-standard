@@ -6,9 +6,9 @@ import {
   recommended,
   standard,
   stylistic
-} from '@sequencemedia/eslint-config-standard/config'
+} from '@sequencemedia/eslint-config-standard/configs'
 
-describe('@sequencemedia/eslint-config-standard/config', () => {
+describe('@sequencemedia/eslint-config-standard/configs', () => {
   describe('`recommended`', () => it('is an object', () => expect(recommended).to.be.an('object')))
 
   describe('`standard`', () => it('is an object', () => expect(standard).to.be.an('object')))

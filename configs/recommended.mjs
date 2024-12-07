@@ -6,6 +6,9 @@ export default {
   languageOptions: {
     ecmaVersion: 'latest'
   },
+  files: [
+    '**/*.{js,mjs,cjs}'
+  ],
   plugins: {
     ...standard.plugins,
     ...stylistic.plugins
