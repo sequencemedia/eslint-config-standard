@@ -242,7 +242,6 @@ export default {
       'error',
       'never'
     ],
-
     /**
      * `eslint-plugin-n`
      */
@@ -256,12 +255,10 @@ export default {
     'n/no-new-require': 'error',
     'n/no-path-concat': 'error',
     'n/process-exit-as-throw': 'error',
-
     /**
      * `eslint-plugin-promise`
      */
     'promise/param-names': 'error',
-
     /**
      * `eslint-plugin-import`
      */

@@ -4,7 +4,6 @@ export default {
   name: '@sequencemedia/eslint-config-standard/stylistic',
   plugins: {
     '@stylistic': stylistic
-
   },
   rules: {
     /**
