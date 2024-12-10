@@ -2,8 +2,7 @@ import {
   expect
 } from 'chai'
 
-import STANDARD from '@sequencemedia/eslint-config-standard/configs/standard'
-import STYLISTIC from '@sequencemedia/eslint-config-standard/configs/stylistic'
+import eslintConfig from '@sequencemedia/eslint-config-standard'
 
 import merge from '@sequencemedia/eslint-config-standard/merge'
 
@@ -14,6 +13,12 @@ describe('@sequencemedia/eslint-config-standard/merge', () => {
     describe('Always', () => it('returns an array', () => expect(merge()).to.be.an('array')))
 
     describe('Merges', () => {
+      const [
+        DEFAULT,
+        STANDARD,
+        STYLISTIC
+      ] = eslintConfig
+
       it('returns an array', () => {
         const MOCK_FILES = [
           'MOCK FILES'
@@ -27,6 +32,9 @@ describe('@sequencemedia/eslint-config-standard/merge', () => {
         const MOCK_LINTER_OPTIONS = {
           mockOption: 'MOCK LINTER OPTIONS'
         }
+        const MOCK_PLUGINS = {
+          mockOption: 'MOCK PLUGINS'
+        }
         const MOCK_RULES = {
           mockOption: 'MOCK RULES'
         }
@@ -35,11 +43,19 @@ describe('@sequencemedia/eslint-config-standard/merge', () => {
         }
 
         const {
-          rules: STANDARD_RULES
+          languageOptions: STANDARD_LANGUAGE_OPTIONS,
+          linterOptions: STANDARD_LINTER_OPTIONS,
+          plugins: STANDARD_PLUGINS,
+          rules: STANDARD_RULES,
+          settings: STANDARD_SETTINGS
         } = STANDARD
 
         const {
-          rules: STYLISTIC_RULES
+          languageOptions: STYLISTIC_LANGUAGE_OPTIONS,
+          linterOptions: STYLISTIC_LINTER_OPTIONS,
+          plugins: STYLISTIC_PLUGINS,
+          rules: STYLISTIC_RULES,
+          settings: STYLISTIC_SETTINGS
         } = STYLISTIC
 
         return (
@@ -49,44 +65,64 @@ describe('@sequencemedia/eslint-config-standard/merge', () => {
               ignores: MOCK_IGNORES,
               languageOptions: MOCK_LANGUAGE_OPTIONS,
               linterOptions: MOCK_LINTER_OPTIONS,
+              plugins: MOCK_PLUGINS,
               rules: MOCK_RULES,
               settings: MOCK_SETTINGS
             })
           )
             .to.eql([
-              {
-                name: '@sequencemedia/eslint-config-standard',
-                languageOptions: {
-                  ecmaVersion: 'latest'
-                },
-                files: [
-                  '**/*.{js,mjs,cjs}'
-                ]
-              },
+              DEFAULT,
               {
                 ...STANDARD,
                 files: MOCK_FILES,
                 ignores: MOCK_IGNORES,
-                languageOptions: MOCK_LANGUAGE_OPTIONS,
-                linterOptions: MOCK_LINTER_OPTIONS,
+                languageOptions: {
+                  ...STANDARD_LANGUAGE_OPTIONS,
+                  ...MOCK_LANGUAGE_OPTIONS
+                },
+                linterOptions: {
+                  ...STANDARD_LINTER_OPTIONS,
+                  ...MOCK_LINTER_OPTIONS
+                },
+                plugins: {
+                  ...STANDARD_PLUGINS,
+                  ...MOCK_PLUGINS
+                },
                 rules: {
                   ...STANDARD_RULES,
                   ...MOCK_RULES
                 },
-                settings: MOCK_SETTINGS
+                settings: {
+                  ...STANDARD_SETTINGS,
+                  ...MOCK_SETTINGS
+                }
               },
               {
                 ...STYLISTIC,
                 files: MOCK_FILES,
                 ignores: MOCK_IGNORES,
-                languageOptions: MOCK_LANGUAGE_OPTIONS,
-                linterOptions: MOCK_LINTER_OPTIONS,
+                languageOptions: {
+                  ...STYLISTIC_LANGUAGE_OPTIONS,
+                  ...MOCK_LANGUAGE_OPTIONS
+                },
+                linterOptions: {
+                  ...STYLISTIC_LINTER_OPTIONS,
+                  ...MOCK_LINTER_OPTIONS
+                },
+                plugins: {
+                  ...STYLISTIC_PLUGINS,
+                  ...MOCK_PLUGINS
+                },
                 rules: {
                   ...STYLISTIC_RULES,
                   ...MOCK_RULES
                 },
-                settings: MOCK_SETTINGS
-              }])
+                settings: {
+                  ...STYLISTIC_SETTINGS,
+                  ...MOCK_SETTINGS
+                }
+              }
+            ])
         )
       })
     })
