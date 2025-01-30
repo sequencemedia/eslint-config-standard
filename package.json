@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@sequencemedia/eslint-merge": "^0.0.8",
-    "@stylistic/eslint-plugin": "^3.0.0",
+    "@stylistic/eslint-plugin": "^3.0.1",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-n": "^17.15.1",
     "eslint-plugin-promise": "^7.2.1",
