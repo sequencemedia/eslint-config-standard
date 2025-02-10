@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@sequencemedia/eslint-merge": "^0.0.8",
-    "@stylistic/eslint-plugin": "^3.0.1",
+    "@stylistic/eslint-plugin": "^3.1.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-n": "^17.15.1",
     "eslint-plugin-promise": "^7.2.1",
@@ -60,7 +60,7 @@
   },
   "devDependencies": {
     "chai": "^5.1.2",
-    "eslint": "^9.19.0",
+    "eslint": "^9.20.0",
     "husky": "^9.1.7",
     "mocha": "^11.1.0"
   },
