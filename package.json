@@ -59,7 +59,7 @@
     "globals": "^15.15.0"
   },
   "devDependencies": {
-    "chai": "^5.1.2",
+    "chai": "^5.2.0",
     "eslint": "^9.20.1",
     "husky": "^9.1.7",
     "mocha": "^11.1.0"
