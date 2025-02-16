@@ -51,7 +51,7 @@
     "test": "mocha test --recursive --verbose --color"
   },
   "dependencies": {
-    "@sequencemedia/eslint-merge": "^0.0.9",
+    "@sequencemedia/eslint-merge": "^0.0.10",
     "@stylistic/eslint-plugin": "^3.1.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-n": "^17.15.1",
