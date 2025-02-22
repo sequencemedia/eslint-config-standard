@@ -321,6 +321,14 @@ export default {
     '@stylistic/yield-star-spacing': [
       'error',
       'both'
+    ],
+    '@stylistic/member-delimiter-style': [
+      'error',
+      {
+        multiline: {
+          delimiter: 'none'
+        }
+      }
     ]
   }
 }
