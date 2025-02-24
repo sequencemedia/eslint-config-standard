@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 /**
  *  @typedef {import('eslint').Linter.Config} Config
  */
