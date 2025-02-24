@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "target": "ESNext",
+    "allowJs": true,
+    "checkJs": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "strict": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "#eslint-config-standard": [
+        "index.mjs"
+      ],
+      "#eslint-config-standard/merge": [
+        "merge.mjs"
+      ],
+      "#eslint-config-standard/configs": [
+        "configs/index.mjs"
+      ],
+      "#eslint-config-standard/configs/*": [
+        "configs/*.mjs"
+      ]
+    }
+  },
+  "include": [
+    ".",
+    "configs/**/*"
+  ]
+}

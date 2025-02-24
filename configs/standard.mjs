@@ -1,5 +1,7 @@
 import n from 'eslint-plugin-n'
+// @ts-ignore
 import p from 'eslint-plugin-promise'
+// @ts-ignore
 import i from 'eslint-plugin-import'
 
 export default {

@@ -1,6 +1,6 @@
-import recommended from './configs/recommended.mjs'
-import standard from './configs/standard.mjs'
-import stylistic from './configs/stylistic.mjs'
+import recommended from '#eslint-config-standard/configs/recommended'
+import standard from '#eslint-config-standard/configs/standard'
+import stylistic from '#eslint-config-standard/configs/stylistic'
 
 export const configs = {
   recommended,
