@@ -1,5 +1,5 @@
-import standard from '#eslint-config-standard/configs/standard'
-import stylistic from '#eslint-config-standard/configs/stylistic'
+import standard from './standard.mjs'
+import stylistic from './stylistic.mjs'
 
 export default {
   name: '@sequencemedia/eslint-config-standard/recommended',

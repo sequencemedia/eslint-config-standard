@@ -3,29 +3,27 @@ import type {
 } from 'eslint'
 
 import type {
-  RecommendedType
+  RecommendedConfig
 } from './configs/recommended.mjs'
 
 import type {
-  StandardType
+  StandardConfig
 } from './configs/standard.mjs'
 
 import type {
-  StylisticType
-} from './configs/stylistic.mjs'
-
-type Config = Linter.Config
+  StylisticConfig
+}  from './configs/stylistic.mjs'
 
 declare const configs: {
-  recommended: RecommendedType,
-  standard: StandardType,
-  stylistic: StylisticType
+  recommended: RecommendedConfig,
+  standard: StandardConfig,
+  stylistic: StylisticConfig
 }
-
-type DefaultType = Config[]
 
 export {
   configs
 }
 
-export default DefaultType
+declare const config: Linter.Config[]
+
+export default config

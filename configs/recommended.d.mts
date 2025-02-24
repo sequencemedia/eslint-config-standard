@@ -2,6 +2,8 @@ import type {
   Linter
 } from 'eslint'
 
-export type RecommendedType = Linter.Config
+export type RecommendedConfig = Linter.Config
 
-export default RecommendedType
+declare const config: RecommendedConfig
+
+export default config

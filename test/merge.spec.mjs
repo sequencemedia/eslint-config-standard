@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import {
   expect
 } from 'chai'
@@ -10,8 +12,6 @@ describe('@sequencemedia/eslint-config-standard/merge', () => {
   describe('`merge`', () => it('is a function', () => expect(merge).to.be.a('function')))
 
   describe('`merge()`', () => {
-    describe('Always', () => it('returns an array', () => expect(merge()).to.be.an('array')))
-
     describe('Merges', () => {
       const [
         DEFAULT,

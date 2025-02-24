@@ -2,6 +2,8 @@ import type {
   Linter
 } from 'eslint'
 
-export type StylisticType = Linter.Config
+export type StylisticConfig = Linter.Config
 
-export default StylisticType
+declare const config: StylisticConfig
+
+export default config

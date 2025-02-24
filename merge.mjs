@@ -2,7 +2,7 @@
  *  @typedef {import('eslint').Linter.Config} Config
  */
 import getMapMerge from '@sequencemedia/eslint-merge/get-map-merge'
-import eslintConfig from '#eslint-config-standard'
+import eslintConfig from './index.mjs'
 
 /**
  * @param {Config} config
