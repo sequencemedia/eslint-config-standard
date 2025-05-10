@@ -54,7 +54,7 @@
     "@sequencemedia/eslint-merge": "^0.0.24",
     "@stylistic/eslint-plugin": "^4.2.0",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-n": "^17.17.0",
+    "eslint-plugin-n": "^17.18.0",
     "eslint-plugin-promise": "^7.2.1",
     "globals": "^16.1.0"
   },
