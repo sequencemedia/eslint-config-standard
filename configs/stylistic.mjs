@@ -63,11 +63,11 @@ export default {
       'error',
       'property'
     ],
-    '@stylistic/eol-last': 'error',
+    '@stylistic/eol-last': 'error', /*
     '@stylistic/func-call-spacing': [
       'error',
       'never'
-    ],
+    ], */
     '@stylistic/generator-star-spacing': [
       'error',
       {
@@ -204,8 +204,9 @@ export default {
     ],
     '@stylistic/object-property-newline': [
       'error',
-      {
-        allowMultiplePropertiesPerLine: true
+      { /*
+        allowMultiplePropertiesPerLine: true, */
+        allowAllPropertiesOnSameLine: true
       }
     ],
     '@stylistic/operator-linebreak': [
