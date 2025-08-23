@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@sequencemedia/eslint-merge": "^0.0.44",
-    "@stylistic/eslint-plugin": "^5.2.2",
+    "@stylistic/eslint-plugin": "^5.2.3",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-n": "^17.21.3",
     "eslint-plugin-promise": "^7.2.1",
@@ -62,8 +62,8 @@
     "@types/chai": "^5.2.2",
     "@types/eslint": "^9.6.1",
     "@types/mocha": "^10.0.10",
-    "chai": "^5.2.1",
-    "eslint": "^9.32.0",
+    "chai": "^6.0.1",
+    "eslint": "^9.34.0",
     "husky": "^9.1.7",
     "mocha": "^11.7.1"
   },
