@@ -1,6 +1,6 @@
 import n from 'eslint-plugin-n'
 import p from 'eslint-plugin-promise'
-import i from 'eslint-plugin-import'
+import i from 'eslint-plugin-import-x'
 
 export default {
   name: '@sequencemedia/eslint-config-standard/standard',
@@ -260,7 +260,7 @@ export default {
      */
     'promise/param-names': 'error',
     /**
-     * `eslint-plugin-import`
+     * `eslint-plugin-import-x`
      */
     'import/export': 'error',
     'import/first': 'error',

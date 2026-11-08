@@ -1,8 +1,13 @@
 # `@sequencemedia/eslint-config-standard`
 
-Standard style Flat Config for ESLint `v9`
+Standard style Flat Config for ESLint `v9` and `v10`
 
 Based on [Standard](https://github.com/standard/eslint-config-standard) via [neostandard](https://github.com/neostandard/neostandard)
+
+## Requirements
+
+- ESLint `^9.38.0 || ^10.0.0`
+- Node.js `^20.19.0 || ^22.13.0 || >=24`
 
 ## Install
 
