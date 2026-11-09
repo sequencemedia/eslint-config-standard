@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/eslint-config-standard",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Standard configuration for ESLint 9 and 10",
   "keywords": [
     "JavaScript Standard Style",
