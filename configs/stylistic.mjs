@@ -8,11 +8,11 @@ export default {
   rules: {
     /**
      * `@stylistic/eslint-plugin`
-     */
+     *//*
     '@stylistic/array-bracket-spacing': [
       'error',
       'never'
-    ],
+    ], */
     '@stylistic/arrow-spacing': [
       'error',
       {
@@ -190,7 +190,7 @@ export default {
     ],
     '@stylistic/no-tabs': 'error',
     '@stylistic/no-trailing-spaces': 'error',
-    '@stylistic/no-whitespace-before-property': 'error',
+    '@stylistic/no-whitespace-before-property': 'error', /*
     '@stylistic/object-curly-newline': [
       'error',
       {
@@ -204,11 +204,11 @@ export default {
     ],
     '@stylistic/object-property-newline': [
       'error',
-      { /*
-        allowMultiplePropertiesPerLine: true, */
+      { *//*
+        allowMultiplePropertiesPerLine: true, *//*
         allowAllPropertiesOnSameLine: true
       }
-    ],
+    ], */
     '@stylistic/operator-linebreak': [
       'error',
       'after',
@@ -328,6 +328,23 @@ export default {
       {
         multiline: {
           delimiter: 'none'
+        }
+      }
+    ],
+    '@stylistic/list-style': [
+      'error',
+      {
+        singleLine: {
+          spacing: 'never'
+        },
+        overrides: {
+          '{}': {
+            singleLine: {
+              spacing: 'always'
+            }
+          },
+          '()': 'off',
+          '<>': 'off'
         }
       }
     ]
